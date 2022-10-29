@@ -74,7 +74,7 @@ fun insertionSort(array: IntArray) {
  */
 fun shellSort(array: IntArray) {
     // Variables
-    var aux:Int
+    var aux: Int
     var j: Int
     var interval = 1
     // Comprobar tamaño máximo de intervalo

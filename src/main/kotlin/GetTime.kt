@@ -9,11 +9,13 @@
 fun getSortingTime(numberOfArrays: Int = 5, sizeOfArrays: Int, method: String): Long {
     require(numberOfArrays > 0) { "Number of arrays must be greater than zero" }
     require(sizeOfArrays > 0) { "Number of arrays must be greater than zero" }
-    require(method == "bubble"
-            || method == "selection"
-            || method == "insertion"
-            || method == "shell"
-            || method == "quick") { "Invalid sorting method"}
+    require(
+        method == "bubble"
+                || method == "selection"
+                || method == "insertion"
+                || method == "shell"
+                || method == "quick"
+    ) { "Invalid sorting method" }
 
     // Array containing times of each sort
     val timeArray = LongArray(numberOfArrays)
