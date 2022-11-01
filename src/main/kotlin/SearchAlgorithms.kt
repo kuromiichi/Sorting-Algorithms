@@ -59,6 +59,6 @@ fun recursiveBinarySearch(array: IntArray, elemento: Int, inf: Int, sup: Int): I
     } else if (elemento < array[centro]) {
         recursiveBinarySearch(array, elemento, inf, centro - 1)
     } else {
-        recursiveBinarySearch(array, elemento, centro - 1, sup)
+        recursiveBinarySearch(array, elemento, centro + 1, sup)
     }
 }

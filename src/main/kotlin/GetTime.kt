@@ -183,6 +183,7 @@ fun getLinearTime(size: Int): Long {
 fun getIterativeBinaryTime(size: Int): Long {
     val array = getArray(size)
     val element = array.random()
+    array.sort()
     val startTime = System.nanoTime()
     iterativeBinarySearch(array, element)
     return System.nanoTime() - startTime
@@ -196,6 +197,7 @@ fun getIterativeBinaryTime(size: Int): Long {
 fun getRecursiveBinaryTime(size: Int): Long {
     val array = getArray(size)
     val element = array.random()
+    array.sort()
     val startTime = System.nanoTime()
     recursiveBinarySearch(array, element, 0, array.size - 1)
     return System.nanoTime() - startTime
